@@ -19,7 +19,7 @@ namespace Company.Function
         {
             log.LogInformation("random.");
             // minutes since 1970
-            var random = (int)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMinutes;
+            var random = (int)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
 
 
             return new OkObjectResult(random);
